@@ -1,5 +1,3 @@
-
-#frequencies = dict(sorted(frequencies.items())) # сортировка по алфавиту
 def char_freq(file):
     frequencies = {}
     russian_alphabet = 'абвгдеёжзийклмнопрстуфхцчшщъыьэюя'
@@ -23,6 +21,7 @@ def char_freq(file):
     for letter in frequencies:
         frequencies[letter] = round((frequencies[letter] / all_letters), 7)
 
+    # frequencies = dict(sorted(frequencies.items())) # сортировка по алфавиту
     # сортировка частот по убыванию
     frequencies = dict(sorted(frequencies.items(), key=lambda item: item[1], reverse=True))
     return frequencies
