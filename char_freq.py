@@ -23,6 +23,5 @@ def char_freq(file):
 
     return frequencies
 
-frequencies = char_freq("Pract4.files/zadanie3.1.txt")
-for i in frequencies.items():
-    print(i)
+frequencies = char_freq("Pract4.files/zadanie3.3.txt")
+print(frequencies)
